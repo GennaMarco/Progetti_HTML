@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<header>
+		<div class="logo text-color">LOGO</div>
+		<a href="#" class="login text-color">Login</a>	<!-- # significa "vuoto" -->
+	</header>
+
+	<nav>
+		<ul>
+			<li>
+				<a href="#">Home</a>
+			</li>
+			<li>
+				<a href="about.html">About</a>
+			</li>
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+		</ul>
+	</nav>
+	
+	<!-- usiamo dei div container per incapsulare tutto correttamente, evitando che i float right e left per esempio vadano a sporcare la pagina; dentro il container usando il clear pulisco ogni volta il div e poi vado a capo -->
+	<div class="container">
+		<!-- il div di base ha larghezza tutto lo schermo e altezza 0; l'altezza viene poi adattata a seconda dei contenuti che si inseriscono dentro -->
+		<section>
+			<h1 class="text-color">HOME</h1>
+
+			<img src="./images/torino.jpg" alt="Torino">
+
+			<p class="text-color">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum ultricies nisi et condimentum. Cras sed sapien neque. Pellentesque nulla eros, feugiat eu metus ut, euismod malesuada turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi blandit elit eget dictum eleifend. Donec quam nibh, sollicitudin eget augue eget, pellentesque pellentesque mi. Nam ut auctor sem, et lobortis lectus. Ut dignissim ex in orci iaculis, ullamcorper fermentum est malesuada.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum ultricies nisi et condimentum. Cras sed sapien neque. Pellentesque nulla eros, feugiat eu metus ut, euismod malesuada turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi blandit elit eget dictum eleifend. Donec quam nibh, sollicitudin eget augue eget, pellentesque pellentesque mi. Nam ut auctor sem, et lobortis lectus. Ut dignissim ex in orci iaculis, ullamcorper fermentum est malesuada.
+				Lo 
+			</p>
+			<!-- <div class="square-section">
+				section
+			</div>
+			<div class="square-page">
+				square-page
+			</div> -->
+		</section>
+
+		<aside>
+			<h2>Menu secondario</h2>
+		</aside>
+
+	</div>
+	<footer>
+		<p>Fabrizio Srl - Via Garibaldi 22, Mazzè</p>
+		<p>P.IVA: 123456789</p>
+	</footer>
+</body>
+</html>

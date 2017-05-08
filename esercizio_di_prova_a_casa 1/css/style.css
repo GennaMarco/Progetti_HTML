@@ -1,0 +1,193 @@
+*
+{
+	box-sizing: border-box;
+	font-size: 18px;
+}
+
+html, body
+{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body
+{
+   padding-top: 100px;
+}
+
+header
+{
+	position: fixed;
+	top: 0;
+	background-color: #DCD5D5;
+	height: 60px;
+	width: 100%;
+	z-index: 10;
+	text-align: center;
+}
+
+header .logo
+{
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	height: 40px;
+	width: 40px;
+}
+
+header .login
+{
+	float: right;
+    margin-top: 16px;
+    margin-right: 10px;
+}
+
+header .login a
+{
+	color: white;
+}
+
+header .title
+{
+	margin-top: 16px;
+	display: inline-block;
+    font-size: 24px;
+}
+
+nav
+{
+	position: fixed;
+	top: 60;
+	background-color: #99F6F9;
+	height: 40px;
+	width: 100%;
+	text-align: center;
+	z-index: 10;
+}
+
+nav ul
+{
+	padding: 10px;
+	margin: 0;
+}
+
+nav ul li
+{
+   display: inline-block;
+   margin-right: 5px;
+}
+
+nav ul li a
+{
+	text-decoration: none;
+}
+
+.container
+{
+	position: relative;
+	width: 100%;
+}
+
+.container:after
+{	
+	content: "";
+	display: block;
+	clear: both;
+}
+
+section
+{	
+   width: 100%;
+   float: none;
+   background-color: white;
+   padding: 10px;
+}
+
+article
+{
+   margin-bottom: 20px;
+}
+
+article strong
+{
+	display: block;
+}
+
+article .title
+{
+	color: red;
+	font-size: 26px;
+}
+
+article p
+{
+	margin: 0;
+	text-align: justify;
+}
+
+aside
+{
+   width: 100%;
+   float: none;
+   background-color: #FFFAA2;
+   padding: 10px;
+   text-align: center;
+}
+
+aside ul li
+{
+	list-style: none;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+aside ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+footer
+{
+	background-color: black;
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+}
+
+footer p
+{
+   color: white;
+}
+
+@media screen and (min-width: 1024px){
+    
+    *
+	{
+	   font-size: 16px;
+	}
+    
+	section
+	{
+	   position: relative;	
+	   width: 80%;
+	   float: right;
+	}
+
+
+	aside
+	{
+	   position: absolute;
+	   width: 20%;
+	   height: 100%;
+	   float: left;
+	}
+
+	aside ul li
+	{
+	   display: block;
+	}
+	
+}
+

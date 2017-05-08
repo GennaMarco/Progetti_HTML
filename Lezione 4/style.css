@@ -1,0 +1,121 @@
+*
+{
+	box-sizing : border-box;
+}
+
+html, body
+{
+	height: 100;
+	min-height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body
+{
+	padding-top: 80px;
+}
+
+header
+{
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 80px;
+	background: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 25px; /* */
+}
+
+.header-container
+{
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.logo
+{
+	height: 53px;
+	width: 76px;
+	background-color: orange;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul.menu
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.menu li
+{
+	display: inline-block;
+}
+
+ul.menu li a
+{
+	text-decoration: none;
+}
+
+.container
+{
+	height:  100%;
+	width: 100%;
+	display: flex; /* se l'asciamo SOLAMENTE questa istruzione, i due div prendono tutta l'altezza disponibile */
+	background-color: coral;
+	/*justify-content: center; /* il contenuto del nostro contenitore deve essere tutto giustificato in centro*/
+	/*justify-content: flex-start; /* il contenuto del nostro contenitore deve essere tutto giustificato a sinistra*/
+	/*justify-content: flex-end; /* il contenuto del nostro contenitore deve essere tutto giustificato a destra*/
+	/*justify-content: space-around;*/ 
+	/*justify-content: space-between; /*posiziona  .uno a sinistra e .due a destra(se fossero 3, il terzo in mezzo)*/
+	/*align-items: center;*/
+	/*align-items: flex-start; /* posiziona i due div partendo dall'alto*/
+	/*align-items: flex-end; /* posiziona i due div partendo dal basso*/
+	flex-direction: column; /*posiziona i due elementi tutti e due su una colonna(uno sotto l'altro)*/
+}
+
+@media screen and (min-width: 1024px){
+
+	.container
+	{
+		flex-direction: row;
+	}
+
+}
+
+.sinistra
+{
+	background-color: grey;     /* Prendono tutta l'altezza disponibile del .container(genitore)*/
+	/*height: 300px;*/
+	/*width: 200px;*/
+	/*flex: 1; /*proporzionato (tutto lo spazio che gli rimane)*/  /* vi è una proporzione 1:3. In 4 spazi, a un div assegno 3, all'altro 1(ESEMPIO)*/
+	flex: 0 0 80%; /*grow: capacità di estendersi rispetto agli altri fratelli; shrink: quanto questo si può restringere; basis: dimensione che noi gli diamo minima che il div deve avere, si esprime in % */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sinistra .sinistra-child
+{
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+}
+
+.destra
+{
+	background-color: black;
+	color: white;
+	/*height: 500px;*/
+	/*width: 300px;*/
+	/*flex: 1;  /* prende tutto lo spazio disponibile*/
+	flex: 0 0 20%;
+}
