@@ -1,0 +1,94 @@
+$color-primary: green;
+$color-secondary: blue;
+$base-fontsize: 16px;
+
+@mixin clearfix()
+{
+  &:after
+  {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin button-hover($color)
+{
+ background: lighten($color, 10%);
+}
+
+@mixin transition($time)
+{
+ transition: all $time ease-in-out;
+}
+
+@function em-converter($px)
+{
+  @if unitless($px) /* non ha unita di misura*/
+  { 
+    @error "Please specify a pixel unit";
+  }
+  @return ($px / 16px) * 1em;
+}
+
+.button
+{
+  border: 1px solid black;
+  width: em-converter(200px);
+  height: em-converter(100px);
+  @include transition(2000ms);
+  p
+  {
+    color: black;
+  }
+  &:hover
+  {
+    background: grey;
+  }
+  @include clearfix();
+}
+
+.button-primary
+{
+  @extends .button;
+  background: $color-primary;
+  &:hover
+  {
+    @include button-hover($color-primary);
+  }
+}
+
+.button-secondary
+{
+  @extends .button;
+  background: $color-secondary;
+    &:hover
+    {
+      @include button-hover($color-secondary);
+    }
+}
+
+h1, h2, h3
+{
+  color: $color-primary;
+}
+
+h1
+{
+  font-size: em-converter(32px);
+}
+
+h2
+{
+   font-size: em-converter(28px);  
+}
+
+h3
+{
+   font-size: em-converter(24px); 
+}
+
+p
+{
+  font-size: em-converter($base-fontsize);
+}

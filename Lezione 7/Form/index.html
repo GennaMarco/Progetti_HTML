@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Form</title>
+</head>
+<body>
+
+	<header>
+		
+	</header>
+
+	<section>
+	<h2>Compila il seguente form</h2>
+		<form method="GET">
+			<label for="inputName">Name</label><br>
+			<input type="text" name="name" id="inputName" placeholder="Inserisci il tuo nome"><br>
+			<!-- il name arriva al server(nome variabile)(controllare l'URL), id è l'identificativo per la label-->
+
+			<label for="inputSurname">Surname</label><br>
+			<input type="text" name="surname" id="inputSurname" placeholder="Inserisci il tuo cognome"><br> 
+
+			<label for="inputEmail">Email</label><br>
+			<input type="email" name="email" id="inputEmail" placeholder="alearci@gmail.com"><br>
+
+			<label>Gender<br>
+				<input type="radio" name="gender" value="male" checked> Male
+				<input type="radio" name="gender" value="female"> Female
+			</label><br> 
+			<label>Hobbies<br>
+				<input type="checkbox" name="hobby1" value="footbal"> Football
+				<input type="checkbox" name="hobby2" value="volley"> Volley
+				<input type="checkbox" name="hobby3" value="music"> Music
+			</label><br>
+			<button type="submit">Invia</button>
+		</form>
+	</section>
+
+</body>
+</html>

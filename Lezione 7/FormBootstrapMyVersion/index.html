@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Form Bootstrap My Version</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- our custom CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- jQuery: libreria serve per semplificare e manipolare la programmazione in javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+
+</head>
+<body>
+
+	<header>
+		
+	</header>
+
+	<section>
+	
+		<h2 class="text-center">Compila il seguente form</h2>
+		<form class="center-block">
+		  <div class="form-group">
+		    <label for="inputName">Name</label>
+		    <input class="form-control" type="text" name="name" id="inputName" placeholder="Inserisci il tuo nome">
+		  </div>
+		  <div class="form-group">
+		    <label for="inputSurname">Surname</label>
+		    <input class="form-control" type="text" name="surname" id="inputSurname" placeholder="Inserisci il tuo cognome">
+		  </div>
+		  <div class="form-group">
+		    <label for="inputEmail">Email</label>
+		    <input class="form-control" type="email" name="email" id="inputEmail" placeholder="example@domain.com">
+		  </div>
+		  <label>Gender</label>
+		  <div class="radio">
+			  <label class="radio-inline">
+			    <input type="radio" name="gender" value="male" checked> Male
+		      </label>
+		      <label class="radio-inline"> 
+				<input type="radio" name="gender" value="female"> Female
+			  </label>
+		  </div>
+		  <label>Hobbies</label>
+		  <div class="checkbox">
+			  <label class="checkbox-inline">
+				  <input type="checkbox" name="hobby1" value="football"> Football
+			  </label>
+			  <label class="checkbox-inline">
+				  <input type="checkbox" name="hobby2" value="basket"> Basket
+			  </label>
+			  <label class="checkbox-inline">
+				  <input type="checkbox" name="hobby3" value="volley"> Volley
+			  </label>
+		  </div>
+		  <div class="form-group">
+		  	<button type="submit">Invia</button>
+		  </div>
+		</form>
+
+	</section>
+
+</body>
+</html>

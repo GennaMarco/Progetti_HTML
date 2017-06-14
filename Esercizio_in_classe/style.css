@@ -1,0 +1,178 @@
+*
+{
+	box-sizing: border-box;
+	font-size: 18px;
+	margin: 0;
+	padding: 0;
+}
+
+html, body
+{
+   height: 100%;
+}
+
+header
+{
+	display: flex;
+	background-color: red;
+	height: 70px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+header .title
+{
+	color: blue;
+}
+
+header .logo 
+{
+	background-image: url("img/logo.jpg");
+	background-size: cover; /* permette di prendere tutto lo spazio del div .logo */
+	height: 40px;
+	width: 40px;
+}
+
+header .login 
+{
+	color: black;
+}
+
+nav
+{
+	background-color: yellow;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+}
+
+nav ul li
+{
+	list-style: none;
+	display: inline-block;
+}
+
+nav ul li a
+{
+	text-decoration: none;
+}
+
+.container
+{
+	display: flex;
+	width: 100%;
+}
+
+section
+{
+	background-color: blue;
+	flex: 3;
+	padding: 10px;
+}
+
+aside
+{
+	background-color: violet;
+	flex: 1;
+	display: flex;
+	padding: 10px;
+}
+
+aside .icone
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/*justify-content: space-around;*/
+	width: 110px;
+	flex: 1;
+}
+
+aside .liste
+{
+	flex: 2;
+}
+
+aside ul li
+{
+	list-style: none;
+}
+
+aside ul li a:hover
+{
+   color: white;
+   text-decoration: none;
+}
+
+aside .facebook
+{
+	background-image: url("img/facebook.png");
+	background-size: cover;
+	height: 80px;
+	width: 80px;
+	transition: opacity 300ms ease-in-out;
+}
+
+aside .facebook:hover
+{
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+aside .instagram
+{
+	background-image: url("img/instagram.png");
+	background-size: cover;
+	height: 80px;
+	width: 80px;
+	transition: opacity 300ms ease-in-out;
+}
+
+aside .instagram:hover
+{
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+aside .twitter
+{
+	background-image: url("img/twitter.png");
+	background-size: cover;
+	height: 80px;
+	width: 80px;
+	transition: opacity 300ms ease-in-out;
+}
+
+aside .twitter:hover
+{
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+article
+{
+	margin-bottom: 20px;
+}
+
+article p.title
+{
+	color: red;
+}
+
+footer
+{
+	background-color: black;
+	color: green;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+
+
+
+
+

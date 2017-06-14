@@ -1,0 +1,180 @@
+*
+{
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+html, body 
+{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body
+{
+	padding-top: 90px;
+}
+
+h1, h2
+{
+	margin-top: 0;
+}
+
+header
+{
+	background: orange;
+	padding: 20px;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+}
+
+header .logo
+{
+	float: left;
+}
+
+header .login
+{
+	float: right;
+}
+
+header .text-color
+{
+	color: white;
+}
+
+.bg2
+{
+	background: green;
+	padding: 20px;
+	width: 50%;
+	margin: 10px auto 0 auto;	
+	text-align: center;
+}
+
+.text-color
+{
+	color: red;
+}
+
+.container
+{
+	clear: both;	
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.container:after
+{	
+	content: "";
+	display: block;
+	clear: both;
+}
+
+nav 
+{
+	background: #eee;
+	height: 40px;
+	padding-top: 9px;
+	padding-left: 20px;
+	position: fixed;
+	top: 50px;
+	left:0;
+	right:0;
+	z-index: 100;
+}
+
+nav ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li
+{
+	float: left;
+	margin-right: 10px;
+}
+
+nav ul a
+{
+	text-decoration: none;
+}
+
+section 
+{
+	flex: 0 0 60%;
+	background: #ff4e00;
+	clear: both;
+}
+
+section h1
+{
+	color: white;
+}
+
+section p 
+{
+	color: white;
+}
+
+aside 
+{
+	flex: 0 0 40%;
+	background: brown;
+}
+
+footer 
+{
+	background-color: black;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	height: 100px;
+	width: 100%;
+	clear: left;
+}
+
+img
+{
+	width:100%;
+	max-width: 100%;
+	height: auto;
+}
+
+p
+{
+	text-align: justify;
+}
+
+h1
+{
+	font-size: 3em;
+}
+
+@media screen and (min-width: 1024px)
+{
+	*
+	{
+		font-size: 18px;
+	}
+
+	.container
+	{
+		flex-direction: row;
+	}
+
+	h1
+	{
+		font-size: 3em;
+	}
+}

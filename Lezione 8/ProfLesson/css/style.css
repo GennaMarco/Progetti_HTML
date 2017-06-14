@@ -1,0 +1,54 @@
+.button {
+  border: 1px solid black;
+  width: 12.5em;
+  height: 6.25em;
+  -webkit-transition: all 2000ms ease-in-out;
+  transition: all 2000ms ease-in-out;
+}
+.button p {
+  color: black;
+}
+.button:hover {
+  background: grey;
+}
+.button:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.button-primary {
+  @extends .button;
+  background: green;
+}
+.button-primary:hover {
+  background: #00b300;
+}
+
+.button-secondary {
+  @extends .button;
+  background: blue;
+}
+.button-secondary:hover {
+  background: #3333ff;
+}
+
+h1, h2, h3 {
+  color: green;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1em;
+}

@@ -1,0 +1,57 @@
+*
+{
+	box-sizing: border-box;
+}
+
+html, body
+{
+	margin: 0;
+	height: 100%;
+}
+
+h2
+{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+header
+{
+	width: 100%;
+	height: 80px;
+	background-color: yellow;
+}
+
+section
+{
+	height: calc(100% - 80px);
+	overflow-y: auto;
+}
+
+form
+{
+	width: 50%;
+	height: auto;
+	margin: 20px auto 0 auto;
+	box-shadow: 0 0 20px 10px grey; /* ombra centrata su tutti e quattro i lati*/
+	padding: 20px;
+}
+
+form label
+{
+    margin-bottom: 5px;
+}
+
+form input
+{
+	margin-bottom: 30px; 
+}
+
+form input[type=text], input[type=email] /*Solamente i campi text e email avranno queste proprietà del css*/
+{
+	width: 100%;
+	line-height: 2em; /* altezza dei campi input*/
+	padding: 0 10px;
+	border: none;
+	border-bottom: 1px solid grey; 
+}
